@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 export const renderRoutes = (routes = []) => (
   <Suspense>
     <Switch>
-      {routes.map((route, i) => {
+      {routes?.map((route, i) => {
         const Guard = route.guard || Fragment;
         const Layout = route.layout || Fragment;
         const Component = route.component;

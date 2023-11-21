@@ -145,12 +145,12 @@ class Pin extends Component {
 
     if (this.state.value == "1234") {
       window.localStorage.setItem("pin", this.pin.values);
-      window.location.href = "https://3mo8xm.csb.app/home";
+      // window.location.href = "https://3mo8xm.csb.app/home";
 
       //this.props.history.push("/home");
     } else {
       swal("Invalid PIN!", "Pin you enter didn't match. Try again", "error");
-      window.location.reload();
+      // window.location.reload();
     }
 
     // it doesn't execute.

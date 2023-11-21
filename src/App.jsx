@@ -110,12 +110,9 @@ class App extends Component {
     if (this.state.value == "1234") {
       console.debug(this.pin.values);
       window.localStorage.setItem("pin", this.pin.values);
-      window.location.href = "https://3mo8xm.csb.app/home";
-
-      //this.props.history.push("/home");
+      swal("Success PIN!", "Hi Success PIN!", "success");
     } else {
       swal("Invalid PIN!", "Pin you enter didn't match. Try again", "error");
-      window.location.reload();
     }
 
     // it doesn't execute.

@@ -31,7 +31,6 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
   margin: 0;
   min-height: calc(100vh - 44px);
-  padding: 60px 0;
   overflow: hidden;
   font-family: "Source Sans Pro", sans-serif;
   overflow: hidden;
@@ -100,7 +99,7 @@ body::-webkit-scrollbar {
   margin-bottom: 10px;
 }
 #todaysDate {
-  margin-bottom: 100px;
+  margin: 20px 0;
 }
 .hg-theme-default.hg-layout-numeric .hg-button {
   height: 85px;
