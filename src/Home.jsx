@@ -58,7 +58,7 @@ class Home extends Component {
   render() {
     if (localStorage.getItem("pin") === null) {
       // eslint-disable-next-line react/prop-types
-      // this.props.history.push("/");
+      this.props.history.push("/");
     }
 
     const isActive = this.state.isActive;
@@ -73,8 +73,7 @@ class Home extends Component {
         Number(todayMonth) === Number(Month) &&
         Number(todayDay) === Number(Day)
       ) {
-        // eslint-disable-next-line react/no-direct-mutation-state
-        this.state.birthday = true;
+        this.setState({ birthday: true });
       }
     }, 1000);
 
@@ -93,7 +92,7 @@ class Home extends Component {
                     </div>
 
                     <div className="user-home-clocksheet">
-                      {this.state?.timesheets?.map((timesheet, id) => {
+                      {this?.state?.timesheets?.map((timesheet, id) => {
                         return (
                           <>
                             <span key={id} className={timesheet.type}>
